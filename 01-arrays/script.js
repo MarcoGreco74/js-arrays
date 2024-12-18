@@ -20,6 +20,10 @@ for(let i = 0; i < teachers.length; i++){
   }
 }
 console.log(teachers);
+/* oppure
+teachers.splice(4,1, 'Patrick');
+console.log(teachers);
+*/
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher = teachers.pop();
@@ -52,6 +56,10 @@ for(let i = 0; i < teachers.length; i++){
     console.log(isFabioPresente);
   }
 }
+/*oppure
+const isFabioPresent = teachers.includes('Fabio');
+console.log(isFabioPresent);
+*/
 
 // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
@@ -61,6 +69,10 @@ for(let i = 0; i < teachers.length; i++){
     console.log(lewisIndex);
   }
 }
+/* oppure
+const lewisIndex = teachers.indexOf('Lewis');
+console.log(lewisIndex);
+*/
 
 // 9. Unisci tutti gli insegnanti nell'array teachers in una stringa
 // separata da virgole e salvala nella variabile teachersString
@@ -69,7 +81,10 @@ for(let i = 0; i < teachers.length; i++){
   teachersString+=teachers[i]+', ';
 }
 console.log(teachersString);
-
+/* oppure
+const teachersString = teachers.join();
+console.log(teachersString)
+*/
 
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
